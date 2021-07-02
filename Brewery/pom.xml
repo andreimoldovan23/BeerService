@@ -224,7 +224,7 @@
                 <executions>
                     <execution>
                         <id>generate-docs</id>
-                        <phase>prepare-package</phase>
+                        <phase>verify</phase>
                         <goals>
                             <goal>
                                 process-asciidoc
@@ -252,7 +252,7 @@
                 <executions>
                     <execution>
                         <id>copy-resources</id>
-                        <phase>prepare-package</phase>
+                        <phase>verify</phase>
                         <goals>
                             <goal>copy-resources</goal>
                         </goals>
