@@ -29,5 +29,5 @@ public class BeerDTO {
 
     @NotNull @Positive private Long upc;
     @NotNull @Positive private BigDecimal price;
-    private Integer quantityOnHand;
+    @Null private Integer quantityOnHand;
 }

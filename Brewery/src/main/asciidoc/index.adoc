@@ -1,0 +1,69 @@
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+Get beer
+
+CURL:
+
+include::{snippets}/api/v1/beer-get/curl-request.adoc[]
+
+HTTP request:
+
+include::{snippets}/api/v1/beer-get/http-request.adoc[]
+
+HTTP response:
+
+include::{snippets}/api/v1/beer-get/http-response.adoc[]
+
+Response body:
+
+include::{snippets}/api/v1/beer-get/response-body.adoc[]
+
+Response fields:
+
+include::{snippets}/api/v1/beer-get/response-fields.adoc[]
+
+Save beer
+
+CURL:
+
+include::{snippets}/api/v1/beer-save/curl-request.adoc[]
+
+HTTP request:
+
+include::{snippets}/api/v1/beer-save/http-request.adoc[]
+
+HTTP response:
+
+include::{snippets}/api/v1/beer-save/http-response.adoc[]
+
+Response body:
+
+include::{snippets}/api/v1/beer-save/response-body.adoc[]
+
+Response fields:
+
+include::{snippets}/api/v1/beer-save/response-fields.adoc[]
+
+Request fields:
+
+include::{snippets}/api/v1/beer-save/request-fields.adoc[]
+
+Update beer
+
+CURL:
+
+include::{snippets}/api/v1/beer-update/curl-request.adoc[]
+
+HTTP request:
+
+include::{snippets}/api/v1/beer-update/http-request.adoc[]
+
+HTTP response:
+
+include::{snippets}/api/v1/beer-update/http-response.adoc[]
+
+Request fields:
+
+include::{snippets}/api/v1/beer-save/request-fields.adoc[]
