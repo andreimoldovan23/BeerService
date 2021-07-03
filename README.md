@@ -1,4 +1,4 @@
-[![andreimoldovan23](https://circleci.com/gh/andreimoldovan23/BeerWorks.svg?style=svg)](https://app.circleci.com/pipelines/github/andreimoldovan23/BeerWorks)
+[![andreimoldovan23](https://circleci.com/gh/andreimoldovan23/BeerService.svg?style=svg)](https://app.circleci.com/pipelines/github/andreimoldovan23/BeerService)
 
 # BeerWorks
 

@@ -12,12 +12,9 @@ jobs:
     docker:
       - image: cimg/openjdk:16.0.0
 
-    working_directory: ~/BeerWorks/Brewery
-
     steps:
       # Checkout the code as the first step.
-      - checkout:
-          path: ~/BeerWorks
+      - checkout
 
       # Download and cache dependencies
       - restore_cache:
