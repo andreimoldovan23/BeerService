@@ -35,7 +35,8 @@
         <Logger name="com.fasterxml.jackson.databind" level="WARN"/>
 
         <!-- App -->
-        <Logger name="sfmc.brewery.web.controllers" level="TRACE"/>
+        <Logger name="sfmc.brewery.web" level="TRACE"/>
+        <Logger name="sfmc.brewery.services" level="TRACE"/>
 
         <!-- ROOT -->
         <Root level="WARN">
