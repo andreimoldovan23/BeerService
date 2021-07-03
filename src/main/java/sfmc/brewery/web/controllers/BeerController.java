@@ -33,9 +33,9 @@ public class BeerController {
 
     @PutMapping("/{beerId}")
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public void updateBeer(@PathVariable UUID beerId, @Validated @RequestBody BeerDTO beerDTO) {
+    public BeerDTO updateBeer(@PathVariable UUID beerId, @Validated @RequestBody BeerDTO beerDTO) {
         log.trace("Updating beer with uuid - {}, new value - {}", beerId, beerDTO);
-        beerService.updateBeer(beerId, beerDTO);
+        return beerService.updateBeer(beerId, beerDTO);
     }
 
 }

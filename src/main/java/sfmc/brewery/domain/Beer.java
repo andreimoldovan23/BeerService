@@ -14,6 +14,7 @@ import java.util.UUID;
 
 @Getter
 @NoArgsConstructor
+
 @Entity
 public class Beer implements Serializable {
 
