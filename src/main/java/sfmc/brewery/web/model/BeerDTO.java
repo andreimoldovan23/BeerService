@@ -32,7 +32,7 @@ public class BeerDTO implements Serializable {
     @NotBlank private String beerName;
     @NotNull private BeerStyle beerType;
 
-    @NotNull @Positive private Long upc;
+    @NotBlank private String upc;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     @NotNull @Positive private BigDecimal price;

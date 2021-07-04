@@ -27,7 +27,7 @@ public class Beer implements Serializable {
     private Long version;
 
     @Column(unique = true)
-    @Setter private Long upc;
+    @Setter String upc;
 
     @CreationTimestamp
     @Column(updatable = false)
@@ -44,7 +44,7 @@ public class Beer implements Serializable {
     @Setter private Integer quantityToBrew;
 
     @Builder
-    public Beer(String beerName, String beerType, BigDecimal price, Integer minOnHand, Integer quantityToBrew, Long upc) {
+    public Beer(String beerName, String beerType, BigDecimal price, Integer minOnHand, Integer quantityToBrew, String upc) {
         this.beerName = beerName;
         this.beerType = beerType;
         this.price = price;

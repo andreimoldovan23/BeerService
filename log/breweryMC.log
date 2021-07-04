@@ -309,3 +309,66 @@ INSERT INTO beer (id, beer_name, beer_type, createdDate, lastModifiedDate, minOn
 2021-07-04T17:03:22,182 TRACE [http-nio-8080-exec-1]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer a712d914-61ea-4623-8bd0-32c0f6545bfd is 70 
 2021-07-04T17:03:22,182 TRACE [http-nio-8080-exec-1]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 
 2021-07-04T17:03:22,186 TRACE [http-nio-8080-exec-1]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 is 100 
+2021-07-04T17:32:26,365 WARN  [restartedMain]: aseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-07-04T17:32:52,330 TRACE [http-nio-8080-exec-3]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 0, showInventory true 
+2021-07-04T17:32:52,340 TRACE [http-nio-8080-exec-3]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 0, pageSize 25 
+2021-07-04T17:32:52,424 TRACE [http-nio-8080-exec-3]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T17:32:52,569 TRACE [http-nio-8080-exec-3]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb is 50 
+2021-07-04T17:32:52,570 TRACE [http-nio-8080-exec-3]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer a712d914-61ea-4623-8bd0-32c0f6545bfd 
+2021-07-04T17:32:52,574 TRACE [http-nio-8080-exec-3]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer a712d914-61ea-4623-8bd0-32c0f6545bfd is 70 
+2021-07-04T17:32:52,574 TRACE [http-nio-8080-exec-3]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 
+2021-07-04T17:32:52,580 TRACE [http-nio-8080-exec-3]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 is 100 
+2021-07-04T17:33:00,652 TRACE [http-nio-8080-exec-5]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 0, showInventory false 
+2021-07-04T17:33:00,652 TRACE [http-nio-8080-exec-5]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 0, pageSize 25 
+2021-07-04T17:33:33,728 TRACE [http-nio-8080-exec-7]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 0, showInventory false 
+2021-07-04T17:33:33,729 TRACE [http-nio-8080-exec-7]: BeerServiceImpl                      - Getting beers w/ name null, style IPA, pageNumber 0, pageSize 25 
+2021-07-04T17:33:52,342 TRACE [http-nio-8080-exec-9]: BeerController                       - Getting beer list w/ pageSize 1, pageNumber 0, showInventory false 
+2021-07-04T17:33:52,342 TRACE [http-nio-8080-exec-9]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 0, pageSize 1 
+2021-07-04T17:33:59,919 TRACE [http-nio-8080-exec-6]: BeerController                       - Getting beer list w/ pageSize 2, pageNumber 0, showInventory false 
+2021-07-04T17:33:59,920 TRACE [http-nio-8080-exec-6]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 0, pageSize 2 
+2021-07-04T17:34:09,362 TRACE [http-nio-8080-exec-2]: BeerController                       - Getting beer list w/ pageSize 2, pageNumber 2, showInventory false 
+2021-07-04T17:34:09,362 TRACE [http-nio-8080-exec-2]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 2, pageSize 2 
+2021-07-04T17:34:32,527 TRACE [http-nio-8080-exec-8]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 2, showInventory false 
+2021-07-04T17:34:32,527 TRACE [http-nio-8080-exec-8]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 2, pageSize 25 
+2021-07-04T18:10:47,238 WARN  [restartedMain]: aseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021-07-04T18:11:14,619 TRACE [http-nio-8080-exec-4]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 0, showInventory false 
+2021-07-04T18:11:14,645 TRACE [http-nio-8080-exec-4]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 0, pageSize 25 
+2021-07-04T18:11:36,599 TRACE [http-nio-8080-exec-6]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 0, showInventory false 
+2021-07-04T18:11:56,727 TRACE [http-nio-8080-exec-2]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 0, showInventory true 
+2021-07-04T18:11:56,728 TRACE [http-nio-8080-exec-2]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 0, pageSize 25 
+2021-07-04T18:11:56,732 TRACE [http-nio-8080-exec-2]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:11:56,868 TRACE [http-nio-8080-exec-2]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb is 50 
+2021-07-04T18:11:56,868 TRACE [http-nio-8080-exec-2]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer a712d914-61ea-4623-8bd0-32c0f6545bfd 
+2021-07-04T18:11:56,875 TRACE [http-nio-8080-exec-2]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer a712d914-61ea-4623-8bd0-32c0f6545bfd is 70 
+2021-07-04T18:11:56,875 TRACE [http-nio-8080-exec-2]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 
+2021-07-04T18:11:56,880 TRACE [http-nio-8080-exec-2]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 is 100 
+2021-07-04T18:12:00,194 TRACE [http-nio-8080-exec-5]: BeerController                       - Getting beer list w/ pageSize 25, pageNumber 0, showInventory true 
+2021-07-04T18:12:00,194 TRACE [http-nio-8080-exec-5]: BeerServiceImpl                      - Getting beers w/ name null, style null, pageNumber 0, pageSize 25 
+2021-07-04T18:12:00,195 TRACE [http-nio-8080-exec-5]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:12:00,200 TRACE [http-nio-8080-exec-5]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb is 50 
+2021-07-04T18:12:00,200 TRACE [http-nio-8080-exec-5]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer a712d914-61ea-4623-8bd0-32c0f6545bfd 
+2021-07-04T18:12:00,207 TRACE [http-nio-8080-exec-5]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer a712d914-61ea-4623-8bd0-32c0f6545bfd is 70 
+2021-07-04T18:12:00,207 TRACE [http-nio-8080-exec-5]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 
+2021-07-04T18:12:00,212 TRACE [http-nio-8080-exec-5]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 026cc3c8-3a0c-4083-a05b-e908048c1b08 is 100 
+2021-07-04T18:12:37,804 TRACE [http-nio-8080-exec-3]: BeerController                       - Getting beer with uuid - 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:12:37,804 TRACE [http-nio-8080-exec-3]: BeerServiceImpl                      - Getting beer w/ id 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:12:40,159 TRACE [http-nio-8080-exec-7]: BeerController                       - Getting beer with uuid - 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:00,302 TRACE [http-nio-8080-exec-8]: BeerController                       - Getting beer with uuid - 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:00,302 TRACE [http-nio-8080-exec-8]: BeerServiceImpl                      - Getting beer w/ id 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:00,303 TRACE [http-nio-8080-exec-8]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:00,312 TRACE [http-nio-8080-exec-8]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb is 50 
+2021-07-04T18:13:04,794 TRACE [http-nio-8080-exec-9]: BeerController                       - Getting beer with uuid - 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:04,795 TRACE [http-nio-8080-exec-9]: BeerServiceImpl                      - Getting beer w/ id 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:04,796 TRACE [http-nio-8080-exec-9]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:04,800 TRACE [http-nio-8080-exec-9]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb is 50 
+2021-07-04T18:13:37,555 TRACE [http-nio-8080-exec-10]: BeerController                       - Getting beer by upc - 0631234200036 
+2021-07-04T18:13:37,556 TRACE [http-nio-8080-exec-10]: BeerServiceImpl                      - Getting beer w/ upc 0631234200036 
+2021-07-04T18:13:37,567 TRACE [http-nio-8080-exec-10]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:37,571 TRACE [http-nio-8080-exec-10]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb is 50 
+2021-07-04T18:13:40,153 TRACE [http-nio-8080-exec-1]: BeerController                       - Getting beer by upc - 0631234200036 
+2021-07-04T18:13:40,154 TRACE [http-nio-8080-exec-1]: BeerServiceImpl                      - Getting beer w/ upc 0631234200036 
+2021-07-04T18:13:40,155 TRACE [http-nio-8080-exec-1]: BeerInventoryServiceRestTemplateImpl - Getting inventory on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb 
+2021-07-04T18:13:40,159 TRACE [http-nio-8080-exec-1]: BeerInventoryServiceRestTemplateImpl - Quantity on hand for beer 0a818933-087d-47f2-ad83-2f986ed087eb is 50 
+2021-07-04T18:13:55,254 TRACE [http-nio-8080-exec-4]: BeerController                       - Getting beer by upc - 0631234200036 
+2021-07-04T18:13:55,255 TRACE [http-nio-8080-exec-4]: BeerServiceImpl                      - Getting beer w/ upc 0631234200036 
+2021-07-04T18:13:56,736 TRACE [http-nio-8080-exec-6]: BeerController                       - Getting beer by upc - 0631234200036 

@@ -8,8 +8,9 @@ import sfmc.brewery.web.model.BeerStyle;
 import java.util.UUID;
 
 public interface BeerService {
-    BeerDTO getById(UUID id);
+    BeerDTO getById(UUID id, Boolean showInventory);
     BeerDTO saveBeer(BeerDTO beerDTO);
     BeerDTO updateBeer(UUID id, BeerDTO beerDTO);
-    BeerPagedList getBeerList(String beerName, BeerStyle beerStyle, PageRequest pageRequest);
+    BeerDTO getByUpc(String upc, Boolean showInventory);
+    BeerPagedList getBeerList(String beerName, BeerStyle beerStyle, Boolean showInventory, PageRequest pageRequest);
 }

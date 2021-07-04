@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.io.Serializable;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
@@ -12,7 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class BeerInventoryDTO {
+public class BeerInventoryDTO implements Serializable {
     private UUID id;
     private OffsetDateTime createdDate;
     private OffsetDateTime lastModifiedDate;
