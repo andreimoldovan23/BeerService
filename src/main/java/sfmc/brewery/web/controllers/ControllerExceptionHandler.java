@@ -11,6 +11,7 @@ import javax.validation.ConstraintViolationException;
 @ControllerAdvice
 public class ControllerExceptionHandler {
     private static final String INTERNAL_ERROR = "Something went wrong while accessing the database";
+    private static final String RESOURCE_NOT_FOUND = "Couldn't find what you were looking for, sorry";
 
     @ExceptionHandler(ConstraintViolationException.class)
     public ResponseEntity<?> handle(ConstraintViolationException ce) {
@@ -24,6 +25,11 @@ public class ControllerExceptionHandler {
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<?> handleNotFound(Exception e) {
         return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(NullPointerException.class)
+    public ResponseEntity<?> handleNotFoundStandard() {
+        return new ResponseEntity<>(RESOURCE_NOT_FOUND, HttpStatus.NOT_FOUND);
     }
 
     @ExceptionHandler(DataAccessException.class)
