@@ -9,6 +9,7 @@ import org.springframework.jms.support.converter.MessageType;
 import sfmc.brewery.events.BeerEvent;
 import sfmc.brewery.events.NewInventoryEvent;
 import sfmc.brewery.events.ValidateOrderEvent;
+import sfmc.brewery.events.ValidationResponseEvent;
 import sfmc.brewery.web.model.BeerDTO;
 import sfmc.brewery.web.model.BeerOrderDTO;
 import sfmc.brewery.web.model.BeerOrderLineDTO;
@@ -34,6 +35,7 @@ public class JmsConfig {
         typeIdMappings.put(BeerOrderDTO.class.getSimpleName(), BeerOrderDTO.class);
         typeIdMappings.put(BeerOrderLineDTO.class.getSimpleName(), BeerOrderLineDTO.class);
         typeIdMappings.put(ValidateOrderEvent.class.getSimpleName(), ValidateOrderEvent.class);
+        typeIdMappings.put(ValidationResponseEvent.class.getSimpleName(), ValidationResponseEvent.class);
 
         converter.setTypeIdMappings(typeIdMappings);
         converter.setTypeIdPropertyName("_type");
