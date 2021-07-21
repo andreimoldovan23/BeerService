@@ -8,9 +8,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import sfmc.brewery.services.inventory.implementation.BeerInventoryServiceRestTemplateImpl;
+import sfmc.brewery.services.inventory.implementation.InventoryServiceFailoverFeignClient;
 import sfmc.brewery.services.inventory.model.BeerInventoryDTO;
 
-@FeignClient(name = "beer-inventory-service")
+@FeignClient(name = "beer-inventory-service", fallback = InventoryServiceFailoverFeignClient.class)
 public interface BeerInventoryServiceFeignClient {
     @GetMapping(BeerInventoryServiceRestTemplateImpl.inventoryUrl)
     ResponseEntity<List<BeerInventoryDTO>> getInventoryOnHand(@PathVariable UUID beerId);
