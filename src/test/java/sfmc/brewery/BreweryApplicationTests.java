@@ -3,10 +3,10 @@ package sfmc.brewery;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class BreweryApplicationTests {
 
-    @Test
+    //@Test
     void contextLoads() {
     }
 
